@@ -25,3 +25,23 @@ window.onclick = function (event) {
     }
 }
 
+
+function letsShop() {
+    var result = link("https://www.hilohattie.com/");
+}
+
+
+
+
+
+
+function Redirect(x) {
+    var confirmButton = document.getElementById(x);
+    var userResponse = confirm('You are about to leave this site. If you want to stay, please select cancel.');
+    var displayContainer = document.getElementById('confirmResponse');
+    var displayMessage = '';
+    if (userResponse) {
+        var win = window.open("https://www.hilohattie.com/", '_blank');
+        win.focus();
+    }
+}
