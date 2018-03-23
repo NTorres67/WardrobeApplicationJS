@@ -1,0 +1,69 @@
+﻿body {
+    padding-top: 50px;
+    /*padding-bottom: 20px;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*navbar background*/
+div.navbar.navbar-inverse.navbar-fixed-top {
+    background-image: url('images/HomeBackground.jpg');
+}
+
+.navbar-inverse .navbar-brand {
+    font-size:2vw;
+    font-weight:bold;
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-size:1.5vw;
+    font-weight:bold;
+    color: #ffffff;
+}
+
+p.table-header {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:6vw;
+    font-weight:bold;
+    font-style:italic;
+    color:#ffffff;
+    text-align:center;
+}
+
+a {
+    font-size:1vw;
+    color:#ffffff;
+}
+
+div.thumbnail {
+    justify-content:center;
+    text-align:center;
+}
+
+p.description {
+    font-size:2.5vw;
+    color:#ffffff;
+}
+
+p.layout {
+    color: #ffffff;
+}

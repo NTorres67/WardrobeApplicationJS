@@ -1,0 +1,96 @@
+﻿<link href="~/Content/ShoesDetails.css" rel="stylesheet" />
+
+@model WardrobeApplication.Models.Shoe
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="row">
+    <div class="col">
+        <p class="table-header">
+            Footware Information
+        </p>
+    </div>
+</div>
+<hr/>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="caption shoes-details">
+            <p class="description">
+                Description: @Html.DisplayFor(model => model.ShoeName)
+            </p>
+            <p>
+                Image Location: @Html.DisplayFor(model => model.ShoePhoto)
+            </p>
+            <p>
+                Colors/Patterns: @Html.DisplayFor(model => model.ShoeColor)
+            </p>
+            <p>
+                Season Used: @Html.DisplayFor(model => model.Season.SeasonName)
+            </p>
+            <p>
+                Occasion: @Html.DisplayFor(model => model.Occasion.OccasionName)
+            </p>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+
+
+@*<div>
+    <h4>Shoe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShoeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoePhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShoePhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoeColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShoeColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occasion.OccasionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Season.SeasonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season.SeasonName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@

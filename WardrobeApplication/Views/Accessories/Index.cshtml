@@ -1,0 +1,49 @@
+﻿<link href="~/Content/AccessIndex.css" rel="stylesheet" />
+
+@model IEnumerable<WardrobeApplication.Models.Accessory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col">
+        <p class="table-header">
+            Accessories
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+    </div>
+</div>
+<hr/>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="thumbnail access-index">
+                <div class="caption access-index">
+                    <p class="thumbnail photo">
+                        <img src="@Html.DisplayFor(modelItem => item.AccessoryPhoto)" width="100" height="100">
+                    </p>
+                    <p class="description">
+                        @Html.DisplayFor(modelItem => item.AccessoryName)
+                    </p>
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.AccessoryID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.AccessoryID })
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+

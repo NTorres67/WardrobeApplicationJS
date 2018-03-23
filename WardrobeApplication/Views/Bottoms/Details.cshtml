@@ -1,0 +1,115 @@
+﻿<link href="~/Content/BottomsDetails.css" rel="stylesheet" />
+
+@model WardrobeApplication.Models.Bottom
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="row">
+    <div class="col">
+        <p class="table-header">
+            Bottom Information
+        </p>
+    </div>
+</div>
+</hr>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="thumbnail bottoms-details">
+            <div class="caption bottoms-details">
+                <p class="description">
+                    Description: @Html.DisplayFor(model => model.BottomName)
+                </p>
+                <p>
+                    Image Location: @Html.DisplayFor(model => model.BottomPhoto)
+                </p>
+                <p>
+                    Fabric Colors/Patterns: @Html.DisplayFor(model => model.BottomColor)
+                </p>
+                <p>
+                    Type: @Html.DisplayFor(model => model.BottomType)
+                </p>
+                <p>
+                    Season Used: @Html.DisplayFor(model => model.Season.SeasonName)
+                </p>
+                <p>
+                    Occasion Used: @Html.DisplayFor(model => model.Occasion.OccasionName)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+</div>
+
+
+
+@*<div>
+    <h4>Bottom</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occasion.OccasionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Season.SeasonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season.SeasonName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@

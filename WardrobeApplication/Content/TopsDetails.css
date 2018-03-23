@@ -1,0 +1,18 @@
+﻿body {
+    background-image: linear-gradient(to right bottom, #800000, #914000, #917000, #7b9f00, #33cc33);
+    background-position: center center;
+    background-size: contain;
+}
+
+div.caption.details {
+    background-image: url('images/tops/TapaLavaCloth.jpg');
+    font-size:1.5vw;
+    font-weight:bold;
+    color: #ffffff;
+}
+
+p.description {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #ffffff;
+}
