@@ -6,8 +6,9 @@
     <title>@ViewBag.Title - Dress Hawai`i</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <script src="~/WardrobeScript.js"></script>
 </head>
-<body>
+<body @*onbeforeunload="return function2()"*@>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -21,11 +22,18 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Outfits", "Index", "Outfits")</li>
-                    <li>@Html.ActionLink("Tops", "Index", "Tops")</li>
-                    <li>@Html.ActionLink("Bottoms", "Index", "Bottoms")</li>
-                    <li>@Html.ActionLink("Footware", "Index", "Shoes")</li>
-                    <li>@Html.ActionLink("Accessories", "Index", "Accessories")</li>
                 </ul>
+
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Clothing/Accessory Options</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="~/Tops/" target="_blank">Tops</a>
+                        <a href="~/Bottoms/" target="_blank">Bottoms</a>
+                        <a href="/Shoes/" target="_blank">Footware</a>
+                        <a href="/Accessories/" target="_blank">Accessories</a>
+                    </div>
+
+                </div>    
             </div>
         </div>
     </div>
