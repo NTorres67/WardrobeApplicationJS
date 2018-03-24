@@ -87,7 +87,15 @@ div.navbar.navbar-inverse.navbar-fixed-top {
     display: block;
 }
 
-
+button.btn {
+    background-image: url('images/HomeBackground.jpg');
+    color: white;
+    padding: 16px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
 
 
 /* Table Headers - General*/

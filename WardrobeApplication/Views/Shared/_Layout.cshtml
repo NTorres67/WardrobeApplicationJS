@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
     <script src="~/WardrobeScript.js"></script>
 </head>
-<body @*onbeforeunload="return function2()"*@>
+<body onbeforeunload="return function2()">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -34,10 +34,11 @@
                     </div>
                 </div>   
                 
-                <div class="store">
-                    <button onclick="letsShop()">Let's Shop</button>
-                    
-                </div>
+              
+                    <button type="button" class="btn" onmouseover="overBtn(this)" onmouseout="outBtn(this)"; onclick="letsShop();">Let's Shop</button>
+                    @*<button onclick="letsShop()">Let's Shop</button>*@
+
+                
                 
 
             </div>
