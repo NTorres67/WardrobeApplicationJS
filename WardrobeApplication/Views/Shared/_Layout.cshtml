@@ -8,7 +8,8 @@
     @Scripts.Render("~/bundles/modernizr")
     <script src="~/WardrobeScript.js"></script>
 </head>
-<body onbeforeunload="return function2()">
+<body onbeforeunload="return leavepage()">
+    @* begin navbar *@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -23,9 +24,8 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Outfits", "Index", "Outfits")</li>
                 </ul>
-
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Clothing/Accessory Options</button>
+                    <button onclick="clothingOptions()" class="dropbtn">Clothing/Accessories Options<i class="em em-arrow_down_small"></i> </button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="~/Tops/" target="_blank">Tops</a>
                         <a href="~/Bottoms/" target="_blank">Bottoms</a>
@@ -33,17 +33,12 @@
                         <a href="/Accessories/" target="_blank">Accessories</a>
                     </div>
                 </div>   
-                
-              
-                    <button type="button" class="btn" onmouseover="overBtn(this)" onmouseout="outBtn(this)"; onclick="letsShop();">Let's Shop</button>
-                    @*<button onclick="letsShop()">Let's Shop</button>*@
-
-                
-                
-
+                <button type="button" class="btn" onmouseover="overBtn(this)" onmouseout="outBtn(this)"; onclick="letsShop();">Let's Shop</button>
             </div>
         </div>
     </div>
+    @* end navbar *@
+    @* begin footer *@
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -51,6 +46,7 @@
             <p class="layout">&copy; @DateTime.Now.Year - Dress Hawai`i</p>
         </footer>
     </div>
+    @* end footer *@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

@@ -1,12 +1,12 @@
 ﻿// Verification when attempting to close a webpage
-function function2() {
+function leavepage() {
     return "Are you sure you want to leave this page?"
 }
 
-
+//navbar Clothing/Accessories dropdown
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
+function clothingOptions() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
@@ -26,9 +26,10 @@ window.onclick = function (event) {
 }
 
 
+// Let's Shop Btn on navbar
 function overBtn(x) {
     x.style.backgroundColor = "white";
-    x.style.color = "00ccff";
+    x.style.color = "#00ccff";
 }
 
 function outBtn(x) {
