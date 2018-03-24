@@ -37,13 +37,14 @@
             </div>
         </div>
     </div>
+    <hr />
     @* end navbar *@
     @* begin footer *@
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p class="layout">&copy; @DateTime.Now.Year - Dress Hawai`i</p>
+            <p class="copy" onmouseover="mOver(this)" onmouseout="mOut(this)">&copy; 2018 - Dress Hawai`i</p>
         </footer>
     </div>
     @* end footer *@

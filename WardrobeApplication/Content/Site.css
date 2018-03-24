@@ -97,6 +97,11 @@ button.btn {
     cursor: pointer;
 }
 
+p.copy {
+    color: #00ccff;
+   font-weight:bold;
+}
+
 
 /* Table Headers - General*/
 p.table-header {

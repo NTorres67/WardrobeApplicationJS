@@ -47,3 +47,13 @@ function letsShop(x) {
         win.focus();
     }
 }
+
+function mOver(y) {
+    y.innerHTML = "created by Nicole M Torres"
+    y.style.color = "#00ccff";
+}
+
+function mOut(y) {
+    y.innerHTML = "&copy; 2018 - Dress Hawai`i"
+    y.style.color = "#00ccff";
+}
