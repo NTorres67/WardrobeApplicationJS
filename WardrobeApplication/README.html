@@ -13,38 +13,47 @@ You MUST utilize JavaScript methods to accomplish the following tasks:
 (for example, are of a certain color or are a certain type, like jeans or tshirts) utilizing a JavaScript method,
     buttons and text fields-->
 <!--4 The website MUST allow the user to dynamically enhance size and color of text on mouseover utilizing a
-    JavaScript method, buttons and text fields-->
-<!--The text MUST return to its default size and color when a mouseover is not being performed.-->
-<!--5 The website MUST allow the user to navigate to another site utilizing a JavaScript method, buttons and text fields.-->
-<!--The website MUST inform the user they are being directed to another site.-->
-<!--The website MUST allow the user to cancel the action before it is perfomed.-->
-<!--If the user affirms the action, the website must open in another browser tab.-->
+    JavaScript method, buttons and text fields
+    The text MUST return to its default size and color when a mouseover is not being performed.-->
+Action Implemented: When mouse hovers over copyright information, text increases by 150% and turns orange then returns 
+    to its parent size/color when mouse moves off the text. 
+Location Implemented: layout.cshtml in footer (line 47)
+JS: function mOver(y)
 
+<!--5 The website MUST allow the user to navigate to another site utilizing a JavaScript method, buttons and text fields.
+    The website MUST inform the user they are being directed to another site.
+    The website MUST allow the user to cancel the action before it is perfomed.
+    If the user affirms the action, the website must open in another browser tab.-->
 Action Implemented: Button created (Let's Shop) to navigate the to the Hilo Hattie Clothing website.
     User is informed they are being directed to another site, given the option to continue where the webpage will be opened in
     a new browser, or cancel the action.
-Location Implemented: layout.cshtml in navbar.
+Location Implemented: layout.cshtml in navbar (line 36)
 JS: function letsShop(x)
 
-<!--6 Add a copyright with date in the footer of your website.-->
-<!--The website MUST dynamically replace the copyright and date text to "created by "Insert Your Name".-->
-<!--You can choose to perform this action onhover or onclick.-->
-<!--7 The website MUST implement an array utilizing JavaScript.-->
-<!--The website MUST provide feedback to the user based on the contents of the array.-->
+<!--6 Add a copyright with date in the footer of your website.
+    The website MUST dynamically replace the copyright and date text to "created by "Insert Your Name".
+    You can choose to perform this action onhover or onclick.-->
+Action Implemented: When mouse hovers over copyright information, information is replaced with created by information.
+Location Implemented: layout.cshtml in footer (line 47)
+JS: function mOver(y)
 
+<!--7 The website MUST implement an array utilizing JavaScript.
+    The website MUST provide feedback to the user based on the contents of the array.-->
 <!--8 The website must include your homework example JavaScript.-->
 Action Implemented: "onbeforeunload" Upon closing a page a pop-up will be displayed
     asking the user to confirm if they want to leave the site.
-Location Implemented: layout.cshtml in body tag
+Location Implemented: layout.cshtml in body tag (line 11)
 JS: function leavepage()
 
 <!--9 Include a file called README that describes the project, possibly using this rubric as your starting point.
       State on your README the ways in which you fulfilled the requirements above. This will not be opened as a view
       (although you may want to save it as an HTML file), we will simply be reading the code itself to see how you
       fulfilled the requirements.-->
+Location Implemented:README.html
+
 <!--Stretch task:-->
 <!--Create a drop down menu-->
 Action Implemented: Dropdown menu (Clothing/Accessories Options)
     created on navbar to access: Tops, Bottoms, Shoes, Accessories pages
-Location Implemented: layout.cshtml: dropdown within the navbar
+Location Implemented: layout.cshtml: dropdown within the navbar (line 27)
 JS: function clothingOptions()
