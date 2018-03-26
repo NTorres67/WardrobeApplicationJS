@@ -131,3 +131,7 @@ p.description {
 p.layout {
     color: #ffffff;
 }
+
+div.col.create a {
+    color:#000000;
+}

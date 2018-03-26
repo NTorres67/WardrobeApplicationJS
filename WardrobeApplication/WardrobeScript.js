@@ -60,3 +60,14 @@ function mOut(y) {
     y.style.color = "#00ccff";
     y.style.fontSize = "100%";
 }
+
+function dressOver(t) {
+    var userName = prompt('Welcome to Getting Dressed Hawaiian Style. May I please have your name?');
+    t.innerHTML = userName + ' Getting Dressed';
+}
+
+function dressOut(t) {
+    t.innerHTML = userName + ' Getting Dressed';
+    t.style.color = "#ffffff";
+    t.style.fontSize = "100%";
+}

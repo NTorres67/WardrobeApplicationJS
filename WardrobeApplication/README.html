@@ -1,12 +1,19 @@
 ﻿Wardrobe Iteration 2
 
 Project Requirements
-Although you will not be directed to specific content on which to apply the following JavaScript, you MUST provide detailed documentation on the script you used and the locations it was used.
+Although you will not be directed to specific content on which to apply the following JavaScript,
+you MUST provide detailed documentation on the script you used and the locations it was used.
 
 You MUST utilize JavaScript methods to accomplish the following tasks:
 
 <!--1 The website MUST allow the user to dynamically add content in your web application utilizing a JavaScript method,
     buttons and text fields-->
+Action Implemented: When the mouse hovers the part of the header that states "Getting Dress", a prompt box will popup asking the user:
+    'Welcome to Getting Dressed Hawaiian Style. May I please have your name?'. Upon selecting "ok" "Getting Dressed" will be replaced
+    by "'user input' Getting Dressed"
+Location Implemented: Home\Index.cshtml in row header (line 9)
+JS: function dressOver(t); function dressOut(t)
+
 <!--2 The website MUST allow the user to dynamically remove content from your web application utilizing a JavaScript method,
     buttons and text fields-->
 <!--3 The website MUST allow the user to dynamically show all clothing items that meet certain criteria
@@ -15,8 +22,8 @@ You MUST utilize JavaScript methods to accomplish the following tasks:
 <!--4 The website MUST allow the user to dynamically enhance size and color of text on mouseover utilizing a
     JavaScript method, buttons and text fields
     The text MUST return to its default size and color when a mouseover is not being performed.-->
-Action Implemented: When mouse hovers over copyright information, text increases by 150% and turns orange then returns 
-    to its parent size/color when mouse moves off the text. 
+Action Implemented: When mouse hovers over copyright information, text increases by 150% and turns orange then returns
+    to its parent size/color when mouse moves off the text.
 Location Implemented: layout.cshtml in footer (line 47)
 JS: function mOver(y)
 
@@ -42,6 +49,8 @@ JS: function mOver(y)
 <!--8 The website must include your homework example JavaScript.-->
 Action Implemented: "onbeforeunload" Upon closing a page a pop-up will be displayed
     asking the user to confirm if they want to leave the site.
+    *** Pleaese note that this function does not work when closing the external webpage. If the external
+    webpage is not opened, the function will not work on the tab farthest to the right.
 Location Implemented: layout.cshtml in body tag (line 11)
 JS: function leavepage()
 

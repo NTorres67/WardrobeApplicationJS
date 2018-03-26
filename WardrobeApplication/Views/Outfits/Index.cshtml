@@ -56,55 +56,5 @@
 </div>
 
 
-@*<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Accessory.AccessoryName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Bottom.BottomName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season.SeasonName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Shoe.ShoeName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Top.TopPhoto)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Accessory.AccessoryName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Bottom.BottomName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Occasion.OccasionName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season.SeasonName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Shoe.ShoeName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Top.TopName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OutfitID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.OutfitID })
-        </td>
-    </tr>
-}
 
-</table>*@

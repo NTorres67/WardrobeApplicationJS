@@ -13,7 +13,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button onmouseover="overBtn(this)" onmouseout="outBtn(this)" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -25,7 +25,7 @@
                     <li>@Html.ActionLink("Outfits", "Index", "Outfits")</li>
                 </ul>
                 <div class="dropdown">
-                    <button onclick="clothingOptions()" class="dropbtn">Clothing/Accessories Options<i class="em em-arrow_down_small"></i> </button>
+                    <button onmouseover="overBtn(this)" onmouseout="outBtn(this)" onclick="clothingOptions()" class="dropbtn">Clothing/Accessories Options<i class="em em-arrow_down_small"></i> </button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="~/Tops/" target="_blank">Tops</a>
                         <a href="~/Bottoms/" target="_blank">Bottoms</a>
