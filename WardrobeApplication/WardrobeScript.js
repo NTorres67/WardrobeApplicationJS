@@ -61,6 +61,7 @@ function mOut(y) {
     y.style.fontSize = "100%";
 }
 
+//Allows user to dynamically add content
 function dressOver(t) {
     var userName = prompt('Welcome to Getting Dressed Hawaiian Style. May I please have your name?');
     t.innerHTML = userName + ' Getting Dressed';
@@ -72,6 +73,8 @@ function dressOut(t) {
     t.style.fontSize = "100%";
 }
 
+
+// Allows user to dynamically remove content with a "swap"
 function overCreateOutfit(s) {
     s.style.backgroundColor = "#9933ff";
     s.style.color = "#ffffff";
@@ -98,3 +101,42 @@ function SwapDivsWithClick(div1, div2) {
 }
 
 
+// Array/filter
+function GetTopsFilter {
+    var topsFilterArray = new Array(0);
+    var userResponse = confirm('Would you like to view items by season?');
+    while (userResponse) {
+        var villa = prompt('Please select name of season');
+        villaArray.push(tops);
+    }
+
+    var x = document.getElementById("SeasonID");
+    if (m === Fall) {
+        x.getElementsByTagName('p')[1].innerText = topsFilterArray[0];
+    } else if (m === Summer) {
+        x.getElementsByTagName('p')[1].innerText = topsFilterArray[1];
+    } else if (m === Spring) {
+        x.getElementsByTagName('p')[1].innerText = topsFilterArray[2];
+    } else if (m === Winter) {
+        x.getElementsByTagName('p')[1].innerText = topsFilterArray[3];
+    } else {
+        x.getElementsByTagName('p')[1].innerText = 'Item may be worn during all seasons.';
+    }
+}
+
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
