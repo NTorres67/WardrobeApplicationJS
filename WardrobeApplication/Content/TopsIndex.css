@@ -13,3 +13,10 @@ div.thumbnail.tops-index {
     text-align: center;
     color: #ffffff;
 }
+
+button.dropdown.topsFilter {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1vw;
+}
+
