@@ -124,7 +124,7 @@ function GetTopsFilter {
     }
 }
 
-function myFunction() {
+function SortTops() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
