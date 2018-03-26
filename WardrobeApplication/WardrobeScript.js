@@ -71,3 +71,28 @@ function dressOut(t) {
     t.style.color = "#ffffff";
     t.style.fontSize = "100%";
 }
+
+function overCreateOutfit(s) {
+    s.style.backgroundColor = "#9933ff";
+    s.style.color = "#ffffff";
+    s.style.fontSize = "100%";
+}
+
+function outCreateOutfit(s) {
+    s.style.backgroundColor = "#ffffff";
+    s.style.color = "#000000";
+    s.style.fontSize = "100%";
+}
+
+function SwapDivsWithClick(div1, div2) {
+    d1 = document.getElementById(div1);
+    d2 = document.getElementById(div2);
+    if (d2.style.display == "none") {
+        d1.style.display = "none";
+        d2.style.display = "flex"
+    }
+    else {
+        d1.style.display = "flex";
+        d2.style.display = "none";
+    }
+}

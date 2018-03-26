@@ -14,11 +14,32 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col">
-        <p>
+<div class="row createOutfit" id="orig1">
+    <div class="col createOutfit">
+        <button type="button" class="outfit" onmouseover="overCreateOutfit(this)" onmouseout="outCreateOutfit(this)" onclick="SwapDivsWithClick('orig1', 'swap1')">Create New</button>
+        @*<p>
             @Html.ActionLink("Create New", "Create")
-        </p>
+        </p>*@
+    </div>
+</div>
+
+<div class="row createOutfit" style="display:none" id="swap1">
+    <div class="col createOutfit">
+        <p>Please login or join to create new outfits.</p>
+        <form action="/action_page.php">
+            First name:<br>
+            <input type="text" name="firstname" value="Emmalani">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Bryan">
+            <br /><br />
+            <button type="button" class="outfit" onmouseover="overCreateOutfit(this)" onmouseout="outCreateOutfit(this)" onclick="SwapDivsWithClick('orig1', 'swap1')">Submit</button>
+            <output name="result" id="confirmResponse"></output>
+        </form>
+
+    </div>
+    <div class="col-5 locationscolodd">
+
     </div>
 </div>
 <hr/>

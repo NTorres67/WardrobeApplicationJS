@@ -40,15 +40,15 @@
                 <p>
                     Occasion Used: @Html.DisplayFor(model => model.Occasion.OccasionName)
                 </p>
-
-                <p class="links">
-                    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-                    @Html.ActionLink("Back to List", "Index")
-                </p>
             </div>
         </div>
     </div>
     <div class="col-md-2"></div>
 </div>
-
+<div class="row create">
+    <div class="col create">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</div>
 
